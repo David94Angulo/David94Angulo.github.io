@@ -1,0 +1,98 @@
+.everything {
+    background: url(../Images/tech_background.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom:150px;
+    
+}
+
+
+
+.navbar {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    background-color: #0f530f;
+    
+}
+
+.navbar a{
+    color: #02ff17;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    color: #e01cc6;
+    font-size: 30px;
+}
+
+
+
+.navbar ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card{
+    margin-top:70px;
+    padding: 5px;
+}
+
+.container-fluid {
+    background: rgba(1, 132, 184, 0.25);
+    padding-bottom: 10px;
+    
+}
+
+.headcard {
+    opacity: 1;
+}
+
+.name-body h1{
+    color: #00d7fd;
+    font-size: 100px;
+    text-align: center;
+}
+
+
+.container-fluid img{
+    width: 70%;
+    height:100%;
+    max-width: 600px;
+    max-height: 600px;
+    
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.list-group {
+    font-size: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
