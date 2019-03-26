@@ -34,11 +34,11 @@
             <a class="navbar-brand" href="#projects">Projects</a>
             <a class="navbar-brand" href="#contact">Contact</a>
          </nav>
-
+         
           <div id="summary">
           
-                <div class="card border-primary text-white-50 bg-dark mt-5 mb-5" style="max-width: 80%;">
-                    <h3>Summary  </h3>
+                <div class="card border-primary bg-dark mt-5 mb-5" style="max-width: 80%;">
+                    <h3 class="sum-head"> Summary  </h3>
                     <p class="card-text text-info">Growing up, my father worked with tech all of my life. He brought home cool computers and I knew that I had to learn to push my understanding of what technology was. I use technology every day and I figured it was time I learned enough about tech to contribute to the ever-growing tech industry.
                     </p>
                   </div>
@@ -48,11 +48,11 @@
           <div id="skills">
               <div class="card border-primary bg-secondary mb-5" style="width: 80%;">
                   <div class="card-header">
-                    <h2>Skills</h2>
+                    <h2 class="sum-head">Skills</h2>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item  bg-secondary text-light">Known Programming languages: HTML </li>
-                    <li class="list-group-item  bg-secondary text-light">Known IDE's: </li>
+                    <li class="list-group-item  bg-secondary text-light">Known Programming languages: HTML/CSS & JavaScript </li>
+                    <li class="list-group-item  bg-secondary text-light">Strengths: Efficient. Fast learner. Cooperative.  </li>
                     
                   </ul>
                 </div>
@@ -61,11 +61,12 @@
           <div id="projects">
 
               <div class="card mb-5 bg-warning">
-                  <h4>Projects</h4>
+                  <h4 class="sum-head">Projects</h4>
                   <div class="card-body">
                     <h5 class="card-title">These are some projects I have worked on throughout my entire software developer journey.</h5>
                     
-                    <a href="#" class="btn btn-primary">(Link project?)</a>
+                    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Projects:" data-content="Hello!">Projects...</button>
+                                     
                   </div>
                 </div>
 
@@ -74,24 +75,39 @@
           <div id="contact">
               <div class="card bg-light" style="width: 50%;">
                   <div class="card-header">
-                    <h3>Contact</h3>
+                    <h3 class="sum-head">Contact</h3>
                     You can contact me by any of the following means:
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Github link: <a href="https://github.com/David94Angulo"> https://github.com/David94Angulo</a></li>
-                    <li class="list-group-item">Linkedin link: <a href="https://www.linkedin.com/in/david-angulo-8b9629123/"> https://www.linkedin.com/in/david-angulo-8b9629123/</a></li>
-                    <li class="list-group-item">Email: david.angulo@sbcglobal.net</li>
-                    <li class="list-group-item">Cell Phone: (408) 838-3149</li>
+
+                    <li class="list-group-item">
+                      <div class="media">
+                            <img src="./Images/github.svg" alt="Github:" style=" max-width: 64px; max-height: 64px;">
+                      </div> <a href="https://github.com/David94Angulo" style="text-align: right;"> https://github.com/David94Angulo</a></li>
+
+                    <li class="list-group-item">
+                        <div class="media">
+                            <img src="./Images/Linkedin.png" alt="Linkedin:" style=" max-width: 64px; max-height: 64px;">
+                      </div> <a href="https://www.linkedin.com/in/david-angulo-8b9629123/"> https://www.linkedin.com/in/david-angulo-8b9629123/</a></li>
+                    
+                    
+                      <li class="list-group-item">Email: david.angulo@sbcglobal.net</li>
+
+                    <li id="Cat_photo" class="list-group-item">Cell Phone: (408) 838-3149 <br/> <img src="./Images/cat_on_phone.jpg" alt="Meow">  </li>
+                 
                   </ul>
                 </div>
-          </div>
-
-    </div>
+              </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+   <script> $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
   </body>
 </html>

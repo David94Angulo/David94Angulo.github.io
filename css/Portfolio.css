@@ -11,6 +11,7 @@
     padding-top: 150px;
     padding-bottom:150px;
     
+    
 }
 
 
@@ -23,6 +24,7 @@
     position: relative;
     padding-bottom: 10px;
     background-color: #0f530f;
+    font-family: Impact, sans-serif;
     
 }
 
@@ -34,6 +36,7 @@
 .navbar a:hover {
     color: #e01cc6;
     font-size: 30px;
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
 }
 
 
@@ -49,7 +52,8 @@
 .card{
     margin-top:70px;
     padding: 5px;
-}
+    font-family: "Lucida Console", monospace;
+} 
 
 .container-fluid {
     background: rgba(1, 132, 184, 0.25);
@@ -73,6 +77,9 @@
     height:100%;
     max-width: 600px;
     max-height: 600px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
@@ -83,6 +90,22 @@
 .list-group {
     font-size: 20px
 }
+
+.sum-head {
+    color:  #e01cc6;
+    font-family: "Lucida Console", monospace;
+}
+
+#contact img {
+    width: 70%;
+    height:100%;
+    max-width: 600px;
+    max-height: 600px;
+    
+}
+
+
+
 
 
 
