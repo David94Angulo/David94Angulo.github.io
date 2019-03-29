@@ -19,10 +19,10 @@
 
         <div class="container-fluid text-info">
 
-                <img src="./Images/ProfilePic.jpg" class="card-img" alt="???">
+                <img class="action-pic" id="image1" name="image1" src="./Images/ProfilePic.jpg" class="card-img" alt="???" onclick='toogle(this,["./Images/casual.jpg"]);'>
                 
                     <div class="name-body">
-                      <h1 >David Angulo</h1>
+                      <h1>David Angulo</h1>
                     </div>
         </div>
           
@@ -65,7 +65,13 @@
                   <div class="card-body">
                     <h5 class="card-title">These are some projects I have worked on throughout my entire software developer journey.</h5>
                     
-                    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Projects:" data-content="Hello!">Projects...</button>
+                   <ul>
+                    <li>Heres a <a href="./Projects/Pizza_Project.html" alt="">Pizza </a> ordering website I made.</li>
+                    <li><a href="Projects/COLORSPAM.exe">Click Here </a> for some color therapy! (Press any key for shapes)</li>
+                    <li> Check out this <a href= "Projects/GG turtle!.exe">Turtle! </a>(He's kinda slow, but he is a turtle...)</li>
+                    <li id="togglePhoto"> Click here to toggle my professional photo to a more casual one of me. (Brace yourself)</li>
+
+                   </ul>
                                      
                   </div>
                 </div>
@@ -104,10 +110,48 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- (extra button) <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Projects:" data-html= "" <a> </a> </button>>Projects...</button>-->
+   <script> 
+
   
-   <script> $(function () {
-      $('[data-toggle="popover"]').popover()
-    })
+
+  
+
+
+
+
+
+var gStorage = {};
+
+function toogle(anImage, anAltSrcArr) {
+    if (typeof(anImage) === "undefined" || typeof(anAltSrcArr) === "undefined" || anAltSrcArr.length === 0) {
+        return;
+    }
+
+    var id = anImage.id;
+    var oldSrc = anImage.src;
+
+    if (typeof(gStorage[id]) === "undefined") {
+        gStorage[id] = {
+            'id': id,
+            'origSrc': oldSrc,
+            'i': 0
+        };
+    }
+
+    gStorage[id].i += 1;
+    if (gStorage[id].i > anAltSrcArr.length) {
+        gStorage[id].i = 0;
+    }
+
+    if (gStorage[id].i === 0) {
+        anImage.src = gStorage[id].origSrc;
+    } else {
+        anImage.src = anAltSrcArr[gStorage[id].i - 1];
+    }
+}
   </script>
+
+
   </body>
 </html>

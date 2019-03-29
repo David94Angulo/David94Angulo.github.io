@@ -71,6 +71,9 @@
     text-align: center;
 }
 
+.action-image:hover {
+    cursor: pointer;
+}
 
 .container-fluid img{
     width: 70%;
